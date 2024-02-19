@@ -174,7 +174,7 @@ const ProductForm = ({ onClose, product, isUpdating }: any) => {
                 </div>
               </div>
 
-              <button className="block w-full bg-primary text-white font-bold p-4 rounded-lg">
+              <button className="block w-full bg-yellow-500 text-white font-bold p-4 rounded-lg">
                 Submit
               </button>
             </form>

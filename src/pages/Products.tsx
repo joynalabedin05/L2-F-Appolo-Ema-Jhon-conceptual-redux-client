@@ -21,13 +21,13 @@ const Products = () => {
         <h1 className="text-4xl font-bold my-10">All Products</h1>
         <button
           onClick={() => setShowModal(true)}
-          className="bg-primary text-white px-4 py-2 mt-2 rounded-md"
+          className="bg-primary text-yellow-400 px-4 py-2 mt-2 rounded-md"
         >
           Add Product
         </button>
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
-        {data.data.map((product: any) => (
+        {data?.data.map((product: any) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>

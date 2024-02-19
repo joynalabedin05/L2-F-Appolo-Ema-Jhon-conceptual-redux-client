@@ -1,6 +1,6 @@
 import { CreditCard, Trash2 } from "lucide-react";
 import { useAppDispatch, useAppSelector } from "../redux/hook";
-import { clearCart } from "../redux/features/cartSlice";
+import { clearCart } from "../redux/features/cart/cartSlice";
 
 const OrderSummary = () => {
   const dispatch = useAppDispatch();
@@ -42,7 +42,7 @@ const OrderSummary = () => {
           onClick={(e) => {
             e.stopPropagation();
           }}
-          className="bg-red-500 px-3 py-2 text-white  mt-2 rounded-md w-full text-xs flex justify-between items-center"
+          className="bg-primary px-3 py-2 text-white  mt-2 rounded-md w-full text-xs flex justify-between items-center"
         >
           <span>Proceed Checkout</span>
           <CreditCard className="inline" width={15} height={15} />

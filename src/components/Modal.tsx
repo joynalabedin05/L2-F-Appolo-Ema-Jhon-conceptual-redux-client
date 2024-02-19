@@ -35,7 +35,7 @@ const Modal = ({ product, onClose, handleAddToCart }: any) => {
 
             <div className="grid lg:grid-cols-2 gap-2 ">
               <a
-                className="bg-purple-500 rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-white font-semibold text-sm"
+                className="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-white font-semibold text-sm"
                 href="#"
                 onClick={(e) => handleAddToCart(e, product)}
               >

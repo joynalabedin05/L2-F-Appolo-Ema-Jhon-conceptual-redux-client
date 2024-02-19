@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { useAppDispatch } from "../redux/hook";
-import { removeFromCart, updateQuantity } from "../redux/features/cartSlice";
+import { removeFromCart, updateQuantity } from "../redux/features/cart/cartSlice";
 
 const CartDetails = ({ product }: any) => {
   const dispatch = useAppDispatch();
